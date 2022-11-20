@@ -1,19 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Router from './Router';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './styles/index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>Hello World</h2>
-        <p>
-          Welcome All Buddies to Buddy Webinar!!!
-        </p>
-      </header>
-    </div>
-  );
-}
+const App = () => <Router />;
 
 export default App;

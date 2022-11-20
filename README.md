@@ -1,68 +1,67 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Welcome to Round 3 of your React Interview
 
-## Available Scripts
+> This round is to test your practical knowledge of using React in real world applications.
+> The repo serves as a boilerplate for the React application you are going to build.
+> The boilerplate is created using `create-react-app`.
 
-In the project directory, you can run:
+> **_Please read the below instructions carefully_**
 
-### `yarn start`
+---
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### **Before starting keep in mind the below points**
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- The repo is configured with **ESlint** to check the code quality of your javascript code.
+- Failing the rules set by the above linters will _prevent you from committing to this repo_
+- The Project will show some VS Code plugins as recommendations, that help you regarding these linter, ESLint, Editorconfig, etc. Install these plugins for better experience.
+- Has bootstrap 5, react-router 6, many other libraries which you might need pre-installed.
+- You can install other npm packages if you want
+- Upon completing the problem, commit to your forked github repo and share the github repo url with us for review
+- Writing inline CSS is discouraged, utilise bootstrap or write your custom CSS in separate CSS files or CSS modules.
+- Create a `.env` by copying `.env.example` which contains your environment variables
+- UI must be responsive
+- Can use any online resources to solve the problem
+- Must use [`fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to make API calls instead of `axios`. Use `JSON.stringify` to convert the body to string when doing any POST request. Don't pass any headers like `Content-Type` or `Accept` in the request.
+- You have a total of **2 hrs** to complete the task
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `yarn build`
+> **_Please read the below instructions carefully. Complete all the steps sequentially_**.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **_FORK_** this repo to your own GitHub account. **_DON'T CLONE THIS REPO_**. Fork button is the top right corner of the page.
+2. Clone it to your local machine.
+3. Open the project folder in VS Code
+4. Install the recommended plugins
+   - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+5. Install `node_modules` using `npm` or `yarn`.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+   ```sh
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   OR
 
-### `yarn eject`
+   ```sh
+   yarn install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+6. Create a `.env` by copying `.env.example` at the root of the project.
+7. Run `npm run start` or `yarn start` to run the project.
+8. Project will start at http://localhost:3000
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> If you are on Windows and getting lot of ESLint errors due end of line characters CRLF please run the below command to fix it.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```sh
+npm run lint:fix
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> **NOTE**: If you face issue installing with `npm` trying using `yarn v1.22.*`
 
-## Learn More
+> If you are unable to push to your repo due to lint errors, please run `npm run lint` or `yarn lint` to check the code quality. If unable to solve the lint errors, commit using `git commit -m "YOUR COMMIT MESSAGE" --no-verify` and share the link with us for review.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+> In case of any queries feel free to contact us
